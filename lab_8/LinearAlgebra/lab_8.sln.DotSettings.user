@@ -1,0 +1,7 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=03734241_002D736c_002D4377_002D9c65_002D13ff00194a96/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;TestFunctionsForVector&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Project Location="/Users/daria/Documents/Бауманка предметы/2 курс/3 семестр/ЯПП/С#/lab_8/LinearAlgebra/TestFunctionsForVector" Presentation="&amp;lt;TestFunctionsForVector&amp;gt;" /&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=67ba526d_002De47c_002D4e9c_002D9dd3_002D8bdd31cc9438/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="DifferentDimensionsSumVectorsUnitTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Project Location="/Users/daria/Documents/Бауманка предметы/2 курс/3 семестр/ЯПП/С#/lab_8/LinearAlgebra/TestFunctionsForVector" Presentation="&amp;lt;TestFunctionsForVector&amp;gt;" /&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
