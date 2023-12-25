@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "1zyNyh70+pFzQxgV2e8VG8j1jpfmuUSQwYsNCKArfLsUQxtKQOgUzJ/lVWjI1Cj61W7TI1cXtDQBVazL2LP9Nw==",
+  "success": true,
+  "projectFilePath": "/Users/daria/my_git/YAPP_C#_2_course/YAPP_on_C_sharp_2_course/lab_8/LinearAlgebra/LinearAlgebra.csproj",
+  "expectedPackageFiles": [
+    "/Users/daria/.nuget/packages/microsoft.netcore.app.ref/7.0.14/microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "/Users/daria/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.14/microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
