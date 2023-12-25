@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZgvdZUYz+iYxkiv37iEs2zGQakZ+2HGhP5PiKIx66btnze0bEfFsuVR36axxZGDChQuHEYoQdb9YyIthaonWnQ==",
+  "success": true,
+  "projectFilePath": "/Users/daria/Documents/Бауманка предметы/2 курс/3 семестр/ЯПП/С#/lab_5/LinearAlgebra/VectorDemo/VectorDemo.csproj",
+  "expectedPackageFiles": [
+    "/Users/daria/.nuget/packages/microsoft.netcore.app.ref/7.0.14/microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "/Users/daria/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.14/microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "/Users/daria/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.14/microsoft.netcore.app.host.osx-arm64.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
