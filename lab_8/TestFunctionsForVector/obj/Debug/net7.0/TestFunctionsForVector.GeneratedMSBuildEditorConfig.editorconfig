@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TestFunctionsForVector
-build_property.ProjectDir = /Users/daria/Documents/Бауманка предметы/2 курс/3 семестр/ЯПП/С#/lab_8/LinearAlgebra/TestFunctionsForVector/
+build_property.ProjectDir = /Users/daria/my_git/YAPP_C#_2_course/YAPP_on_C_sharp_2_course/lab_8/TestFunctionsForVector/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CiWt0JEedUIjgE3CKqm8WcqZU+fsCrRRLFjqQ8oCcIde4/GbKnSAIn/CYv2C3cw61eEQ5utz2jYPnA31jgDo+A==",
+  "dgSpecHash": "QM16w8ES25wyajhqpypHsUYp2lx1Ej/XOsxpVvnXnjpX5Iak9WyoCyHFBmugXbDqmGnoEazThYJ/TAXob5U+lw==",
   "success": true,
-  "projectFilePath": "/Users/daria/Documents/Бауманка предметы/2 курс/3 семестр/ЯПП/С#/lab_8/LinearAlgebra/TestFunctionsForVector/TestFunctionsForVector.csproj",
+  "projectFilePath": "/Users/daria/my_git/YAPP_C#_2_course/YAPP_on_C_sharp_2_course/lab_8/TestFunctionsForVector/TestFunctionsForVector.csproj",
   "expectedPackageFiles": [
     "/Users/daria/.nuget/packages/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg.sha512",
     "/Users/daria/.nuget/packages/microsoft.codecoverage/17.7.1/microsoft.codecoverage.17.7.1.nupkg.sha512",
@@ -16,7 +16,9 @@
     "/Users/daria/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512",
     "/Users/daria/.nuget/packages/nunit.analyzers/3.6.1/nunit.analyzers.3.6.1.nupkg.sha512",
     "/Users/daria/.nuget/packages/nunit3testadapter/4.4.2/nunit3testadapter.4.4.2.nupkg.sha512",
-    "/Users/daria/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
+    "/Users/daria/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512",
+    "/Users/daria/.nuget/packages/microsoft.netcore.app.ref/7.0.14/microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "/Users/daria/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.14/microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
   ],
   "logs": []
 }

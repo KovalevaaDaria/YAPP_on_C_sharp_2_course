@@ -1002,11 +1002,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/daria/Documents/Бауманка предметы/2 курс/3 семестр/ЯПП/С#/lab_8/LinearAlgebra/TestFunctionsForVector/TestFunctionsForVector.csproj",
+      "projectUniqueName": "/Users/daria/my_git/YAPP_C#_2_course/YAPP_on_C_sharp_2_course/lab_8/TestFunctionsForVector/TestFunctionsForVector.csproj",
       "projectName": "TestFunctionsForVector",
-      "projectPath": "/Users/daria/Documents/Бауманка предметы/2 курс/3 семестр/ЯПП/С#/lab_8/LinearAlgebra/TestFunctionsForVector/TestFunctionsForVector.csproj",
+      "projectPath": "/Users/daria/my_git/YAPP_C#_2_course/YAPP_on_C_sharp_2_course/lab_8/TestFunctionsForVector/TestFunctionsForVector.csproj",
       "packagesPath": "/Users/daria/.nuget/packages/",
-      "outputPath": "/Users/daria/Documents/Бауманка предметы/2 курс/3 семестр/ЯПП/С#/lab_8/LinearAlgebra/TestFunctionsForVector/obj/",
+      "outputPath": "/Users/daria/my_git/YAPP_C#_2_course/YAPP_on_C_sharp_2_course/lab_8/TestFunctionsForVector/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/daria/.nuget/NuGet/NuGet.Config"
@@ -1021,8 +1021,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/daria/Documents/Бауманка предметы/2 курс/3 семестр/ЯПП/С#/lab_8/LinearAlgebra/LinearAlgebra/LinearAlgebra.csproj": {
-              "projectPath": "/Users/daria/Documents/Бауманка предметы/2 курс/3 семестр/ЯПП/С#/lab_8/LinearAlgebra/LinearAlgebra/LinearAlgebra.csproj"
+            "/Users/daria/my_git/YAPP_C#_2_course/YAPP_on_C_sharp_2_course/lab_8/LinearAlgebra/LinearAlgebra.csproj": {
+              "projectPath": "/Users/daria/my_git/YAPP_C#_2_course/YAPP_on_C_sharp_2_course/lab_8/LinearAlgebra/LinearAlgebra.csproj"
             }
           }
         }
@@ -1069,12 +1069,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }
