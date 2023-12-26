@@ -5,7 +5,7 @@ using DatabaseContext;
 
 namespace Core
 {
-    class GroupEntity : IGroupEntity
+    public class GroupEntity : IGroupEntity
     {
         private readonly DataBaseContext _dataBase;
 
@@ -50,16 +50,30 @@ namespace Core
 
         public void UpdateGroupName(string newName, string tmpId)
         {
-            var group = _dataBase.groups.FirstOrDefault(g => g.Id == Convert.ToInt32(tmpId));
+            try
+            {
+                if (int.TryParse(tmpId, out var groupId))
+                {
+                    var existingGroup = _dataBase.groups.Any(g => g.Name == newName && g.Id != groupId);
 
-            if (group != null)
-            {
-                group.Name = newName;
-                _dataBase.SaveChanges();
+                    if (existingGroup)
+                    {
+                        Console.WriteLine($"\nGroup with name '{newName}' already exists! Please choose a different name!");
+                    }
+                    else
+                    {
+                        _dataBase.UpdateGroupName(newName, groupId);
+                        Console.WriteLine("\nGroup name updated successfully!");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Invalid group ID! Please enter a valid integer!");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Console.WriteLine($"Error updating group name: Group not found for ID {tmpId}");
+                Console.WriteLine($"Error updating group name: {ex.Message}");
             }
         }
 
@@ -92,7 +106,7 @@ namespace Core
                 }
                 else
                 {
-                    Console.WriteLine("Invalid group ID. Please enter a valid integer.");
+                    Console.WriteLine("Invalid group ID! Please enter a valid integer!");
                 }
             }
             catch (Exception ex)

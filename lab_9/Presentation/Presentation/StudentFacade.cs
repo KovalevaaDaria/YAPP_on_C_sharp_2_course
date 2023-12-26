@@ -89,7 +89,6 @@ namespace Presentation
             }
 
             _dataBaseCore.AddStudent(name!, groupId, age);
-            Console.WriteLine("\nStudent added successfully!");
         }
 
 

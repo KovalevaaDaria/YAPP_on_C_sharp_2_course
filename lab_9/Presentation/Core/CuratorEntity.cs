@@ -6,7 +6,7 @@ using DatabaseModels;
 
 namespace Core
 {
-    class CuratorEntity : ICuratorEntity
+    public class CuratorEntity : ICuratorEntity
     {
         readonly DataBaseContext _dataBase;
 
@@ -104,13 +104,14 @@ namespace Core
             }
         }
 
-        public string FindCuratorsName(int groupId)
+        public string? FindCuratorsByGroupID(int groupId)
         {
-            var name = "No curator!";
-            var curator = _dataBase.curators.Where(u => u.GroupId == groupId).ToList();
-            if (curator.Count > 0)
-                name = curator[0].Name;
-            return name;
+            var curator = _dataBase.curators.FirstOrDefault(u => u.GroupId == groupId);
+            if (curator != null)
+            {
+                return curator.Name;
+            }
+            return null;
         }
     }
 }

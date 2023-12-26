@@ -12,6 +12,6 @@ namespace Core.Interfaces
         void UpdateStudentGroup(int newGroupId, string tmpId);
         void DeleteStudent(string tmpId);
         int CountAll(int groupId);
-        double CountAges(string groupName);
+        double? CountAges(string groupName);
     }
 }

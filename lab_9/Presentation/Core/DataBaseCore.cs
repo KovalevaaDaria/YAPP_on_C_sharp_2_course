@@ -109,7 +109,7 @@ namespace Core
 
         public void UpdateStudentAge(string newAge, string tmpId)
         {
-            if (int.TryParse(newAge, out int parsedAge))
+            if (int.TryParse(newAge, out var parsedAge))
             {
                 _student.UpdateStudentAge(parsedAge.ToString(), tmpId);
             }
@@ -179,25 +179,28 @@ namespace Core
 
         public string FindCuratorsName(int groupId)
         {
-            return _curator.FindCuratorsName(groupId);
+            return _curator.FindCuratorsByGroupID(groupId);
         }
-
-        public double CountAverageAge(string curatorName)
+        
+        public double? CountAverageAge(string curatorId)
         {
-            if (int.TryParse(curatorName, out var curatorId))
+            if (int.TryParse(curatorId, out var parsedCuratorId))
             {
-                curatorName = _curator.FindCuratorsName(curatorId);
+                var curatorName = _curator.FindCuratorsByGroupID(parsedCuratorId);
 
-                if (!curatorName.Equals("No curator!"))
+                if (curatorName != null)
                 {
                     var groupNames = _group.SearchGroupsCurator(curatorName);
                     return _student.CountAges(groupNames[0]);
                 }
+
                 Console.WriteLine($"\nCurator not found with ID: {curatorId}");
-                return 0;
+                return null;
             }
+
             Console.WriteLine($"\nInvalid curator ID! Please enter a valid integer!");
-            return 0;
+            return null;
         }
+
     }
 }

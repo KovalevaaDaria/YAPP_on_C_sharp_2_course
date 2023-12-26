@@ -10,7 +10,7 @@ namespace Core.Interfaces
         void UpdateCuratorEmail(string email, string tmpId);
         void UpdateCuratorGroup(int newGroupId, string tmpId);
         void DeleteCurator(string tmpId);
-        string FindCuratorsName(int groupId);
+        string? FindCuratorsByGroupID(int groupId);
         BindingList<Curator> TakeAllCurators();
     }
 }

@@ -6,7 +6,7 @@ using DatabaseModels;
 
 namespace Core
 {
-    class StudentEntity : IStudentEntity
+    public class StudentEntity : IStudentEntity
     {
         private DataBaseContext _dataBase;
 
@@ -63,7 +63,7 @@ namespace Core
             {
                 if (string.IsNullOrWhiteSpace(newName))
                 {
-                    Console.WriteLine("New student name cannot be empty or null.");
+                    Console.WriteLine("New student name cannot be empty or null!");
                     return;
                 }
 
@@ -80,7 +80,7 @@ namespace Core
         {
             try
             {
-                if (int.TryParse(newAge, out int parsedAge))
+                if (int.TryParse(newAge, out var parsedAge))
                 {
                     int changeId = Convert.ToInt32(tmpId);
                     _dataBase.UpdateStudentAge(parsedAge, changeId);
@@ -142,9 +142,10 @@ namespace Core
             return studentsInGroup.Count;
         }
         
-        public double CountAges(string groupName)
+        public double? CountAges(string groupId)
         {
-            return _dataBase.CountAges(groupName);
+            var result = _dataBase.CountAgesByGroupName(groupId);
+            return result.HasValue ? result.Value : null;
         }
     }
 }

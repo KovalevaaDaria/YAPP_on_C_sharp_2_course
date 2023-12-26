@@ -106,7 +106,6 @@ namespace Presentation
                 }
 
                 _dataBaseCore.UpdateGroupName(newName!, groupId!);
-                Console.WriteLine("\nGroup name updated successfully!");
             }
             else
             {

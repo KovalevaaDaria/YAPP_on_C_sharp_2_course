@@ -24,7 +24,6 @@ namespace Core.Interfaces
         void DeleteStudent(string tmpId);
         void DeleteCurator(string tmpId);
         int CountAll(int groupId);
-        string FindCuratorsName(int groupId);
-        double CountAverageAge(string curatorName);
+        double? CountAverageAge(string curatorId);
     }
 }

@@ -56,7 +56,7 @@ namespace DatabaseContext
             return res;
         }
 
-        public void UpdateGroupName(string name, int id)
+        public void UpdateGroupName(string name, int id) 
         {
             groups.Find(id)!.Name = name;
             var student = students.Where(c => c.GroupId == id).ToList<Student>();
@@ -148,40 +148,28 @@ namespace DatabaseContext
 
         public List<string> GroupNamesGet()
         {
-            groups.Load();
+            groups.Load(); // загружает все объекты из коллекции groups из базы данных
             var result = new List<string>(groups.Local.Count);
-            foreach (var group in groups)
-                result.Add(group.Name);
+            result.AddRange(groups.Select(group => group.Name));
             return result;
         }
 
         public List<string> SearchGroupsCurator(string curatorName)
         {
-            var curator = curators.Where(u => u.Name == curatorName).ToList();
-            var group = new List<string>();
-            for (var i = 0; i < curator.Count; i++)
-                group.Add(curator[i].GroupName);
-            return group;
+            var curator = curators.Where(u => u.Name == curatorName).ToList(); 
+            return curator.Select(t => t.GroupName).ToList();
         }
-
-        public double CountAges(string groupName)
+        
+        public double? CountAgesByGroupName(string groupName)
         {
-            var group = groups.FirstOrDefault(group => group.Name == groupName);
-        
-            if (group == null)
-            {
-                Console.WriteLine($"\nGroup not found with name: {groupName}");
-                return 0;
-            }
-        
-            var studentsInGroup = students.Where(student => student.GroupId == group.Id).ToList();
-        
-            if (!studentsInGroup.Any())
+            var studentsInGroup = students.Where(student => student.GroupName == groupName).ToList();
+    
+            if (studentsInGroup.Count == 0)
             {
                 Console.WriteLine($"\nNo students found in group '{groupName}'");
-                return 0;
+                return null; 
             }
-        
+
             return studentsInGroup.Select(student => student.Age).Average();
         }
 
